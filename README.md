@@ -1,2 +1,2 @@
-## SafePass&#174; \n
+## SafePass&#174;
 My password manager.
