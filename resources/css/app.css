@@ -1,3 +1,9 @@
 @import "admin-lte/dist/css/adminlte.min.css";
 @import "admin-lte/plugins/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback'); */
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
