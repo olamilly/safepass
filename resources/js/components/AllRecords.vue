@@ -9,7 +9,7 @@
                     <div class="card-body p-2">
                         <p class="mb-0 d-flex justify-content-around align-items-center" style="position:relative; text-align: left;">
                             <div style="position: absolute;left: 0;">
-                                <img v-if="record.url" :src="record.url" style="width:40px;height:40px">
+                                <img v-if="record.imgurl" :src="record.imgurl" style="width:40px;height:40px">
                                 <img v-else src="../../views/layouts/shield6.png" style="width:40px;height:40px">
                             </div>
                             <div>
@@ -35,6 +35,18 @@
                         </p>
 
                         <div class="d-none">
+                            <a :href="record.url" role="button" target="_blank" v-if="record.url && record.url.substring(0, 3)=='htt'" style="text-decoration: none !important;"> 
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class='bx bx-globe'></i>
+                                    <p class="m-0">{{ record.url }}</p>
+                                </div>
+                            </a>
+                            <a v-if="record.url && record.url.substring(0, 3)!='htt'" style="text-decoration: none !important;"> 
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i class='bx bx-globe'></i>
+                                    <p class="m-0">{{ record.url }}</p>
+                                </div>
+                            </a>
                             <div class="form-group row">
                                 <label  class="col-form-label col-sm-2 " style="text-align: left;">Username</label>
                                 <div class="col-sm-8">
@@ -61,14 +73,14 @@
                 </div>
                
             </div>
-            <div v-if="loggedInState==2 " style="display: flex;flex-direction: column; align-items: center;justify-content: center;">
-                <h1 >No records to show😔...</h1>
-                <RouterLink to="/newrecord"><button type="button" class="btn btn-primary btn-block">add new record</button></RouterLink>
-            </div>
+            
         </div>
         
     </div>
-
+    <div v-if="loggedInState==2 " style="display: flex;flex-direction: column; align-items: center;justify-content: center;">
+        <h1 >No records to show😔...</h1>
+        <RouterLink to="/newrecord"><button type="button" class="btn btn-primary btn-block">add new record</button></RouterLink>
+    </div>
     <div class="overlay" v-if="loggedInState==0" style="align-self: center;">
                 <img class="animation__shake" src="../../views/layouts/shield6.png" alt="AdminLTELogo" height="60" width="60">
             </div>
@@ -124,7 +136,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" id="clBn" class="d-none" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary btn-block" :disabled="loading7" @click="editRecord()">
+        <button type="submit" class="btn btn-primary btn-block" :disabled="loading7||editForm.identifier.length<1||editForm.username.length<1|| editForm.password.length<1" @click="editRecord()">
             <div v-if="loading7" class="spinner-border spinner-border-sm" role="status">
                 <span class="sr-only">Loading...</span>
             </div> 
@@ -320,5 +332,9 @@ onMounted(()=>{
 }
 .mytext-success{
     color:green;
+}
+a{
+    text-decoration: none !important;
+    color:inherit;
 }
 </style>

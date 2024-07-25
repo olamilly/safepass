@@ -43,7 +43,7 @@ class CreateNewUser implements CreatesNewUsers
             \File::makeDirectory($storagePath, 0755, true);
         }
 
-        SimpleExcelWriter::create($filePath, 'csv')->addHeader(['identifier', 'username', 'password', 'url']);
+        SimpleExcelWriter::create($filePath, 'csv')->addHeader(['identifier', 'username', 'password', 'imgurl','url']);
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

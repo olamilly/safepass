@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 import { useToastr } from '../toastr';
 import Swal from 'sweetalert2';
-const toastr = useToastr(); //check this out
+const toastr = useToastr();
 
 const form = reactive({
     vaultname:'',
@@ -28,7 +28,8 @@ const handleSubmit = () => {
             router.push(`/records`);
         })
         .catch((error) => {
-            errorMessage.value = error.response.data.message;
+            errorMessage.value = 'Check your Internet connection and try again.';
+            console.log(error.response.data.message);
         })
         .finally(() => {
             loading.value = false;

@@ -112,7 +112,8 @@ class ApplicationController extends Controller
                 $encryptedid,
                 $encrypteduser,
                 $encrypted,
-                $imgUrl
+                $imgUrl,
+                $request->url
              ]);
         }
         else{
@@ -120,7 +121,8 @@ class ApplicationController extends Controller
                 $encryptedid,
                 myencrypt(auth()->user()->name,$private_secret_key),
                 $encrypted,
-                $imgUrl
+                $imgUrl,
+                $request->url
              ]); 
         }
         
