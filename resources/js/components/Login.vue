@@ -93,7 +93,7 @@ onMounted(()=>{
 
 <template>
         <div v-if="bootState==1" style="width:100%;display:flex;align-items: center;justify-content: center;">
-        <div class="login-box" style="width:70%; min-width: 387px;">
+        <div class="login-box" style="width:90%; max-width: 400px;">
             <div class="card card-outline card-primary" >
                 <div class="card-header text-center">
                     <a  class="h1">Sign-in</a>

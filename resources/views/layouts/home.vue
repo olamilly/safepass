@@ -90,8 +90,8 @@
 
             <nav class="lowNav" >
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-item " data-widget="pushmenu">
-                    <a id="theme" @click="changeTheme()"  class="nav-link s">
+                <li class="nav-item " @click="changeTheme()">
+                    <a id="theme"   class="nav-link s">
                     <!-- <i class='bx bx-moon'></i> -->
                     <i class="fas" :class=" theme === 'dark' ? 'fa-sun' :'fa-moon'"></i>
                         <p id="theme">

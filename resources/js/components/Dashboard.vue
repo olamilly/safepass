@@ -3,7 +3,7 @@
     <div class="content" style="display:block; text-align:center">
     <h1 style="font-size: 3rem; font-weight: 700;">Take control of your digital security.</h1>
     <img src="../../views/layouts/password-manager.png" alt="SafePass Logo" height="200rem" width="200rem" >
-    <h3>Welcome to SafePass<small>&#174;</small>, your trusted and secure password manager.</h3>
+    <h5>Welcome to SafePass<small>&#174;</small>, your trusted and secure password manager.</h5>
     <button type="button" data-widget="pushmenu" class="btn btn-primary btn-lg">Get Started</button>
     <!-- <div style="display:flex;width:100%;justify-content: space-evenly;">
         
