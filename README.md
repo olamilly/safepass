@@ -57,7 +57,7 @@ php artisan serve
 * Edit or delete existing password records as needed.
 
 
-If you'd like to contribute to the project, please feel free to create a pull request on the project's GitHub repository or hmu on linkedin.
+If you'd like to contribute to the project, please feel free to create a pull request or hmu on linkedin.
 
 ### Check out a live demo I hosted on an AWS EC2 Instance: http://ec2-54-242-210-101.compute-1.amazonaws.com/
 
