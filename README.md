@@ -1,17 +1,17 @@
 # SafePass
 
 This is a secure password manager application built with Laravel (backend) and Vue.js (frontend). It allows users to:
-* Create accounts and securely store their passwords for various websites.
-* Encrypt passwords and other sensitive data using the AES-256 encryption algorithm before storing them in the database.
+* Create vaults and securely store their passwords for various websites.
+* Encrypt passwords and other sensitive data using the AES-256 encryption algorithm before storing them in a secure database.
 * Retrieve stored passwords conveniently.
 * Edit and delete password records as needed.
 
 ## Technologies Used:
 
-  - Backend: Laravel (PHP framework)
-  - Frontend: Vue.js (JavaScript framework)
-  - Database: MySQL
-  - Encryption: AES-256
+  - Backend: Laravel (PHP framework).
+  - Frontend: Vue.js (JavaScript framework).
+  - Database: MySQL.
+  - Encryption: AES-256 Encryption Algorithm.
 
 ## Installation:
 
@@ -21,7 +21,7 @@ Configure a database connection in your Laravel .env file.
 Clone the Repository:
 
 ```Bash
-git clone [https://github.com/olamilly/safepass.git]
+git clone https://github.com/olamilly/safepass.git
 ```
 
 Install Dependencies:
@@ -56,6 +56,6 @@ php artisan serve
 * Edit or delete existing password records as needed.
 
 
-If you'd like to contribute to the project, please feel free to create a pull request on the project's GitHub repository or hmu on linkedin.\n
-Check out a live demo I hosted on AWS:\n http://ec2-54-242-210-101.compute-1.amazonaws.com/
+If you'd like to contribute to the project, please feel free to create a pull request on the project's GitHub repository or hmu on linkedin./n
+Check out a live demo I hosted on AWS:/n http://ec2-54-242-210-101.compute-1.amazonaws.com/
 
